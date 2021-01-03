@@ -1,0 +1,11 @@
+  .pharmacy {
+    height:50em;
+    background-size:cover;
+    width:auto;
+    background-position:center;
+    background-image:url('\src\assets\hospital.jpg');
+  }
+
+  h3{
+    margin-top: 3%;
+}

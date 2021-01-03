@@ -1,0 +1,205 @@
+.boundaryForScrollSurvey {
+    position: fixed;
+    width: 100%;
+    height: 185px;
+    padding: 20px;
+    margin-top:  0px;
+    background-color: #6d989a;
+    z-index: 4;
+}
+
+.survey-vertical-line {
+    position: fixed;
+    border-left: 4px solid black;
+    height: 60%;
+    margin-left: 15%;
+    border-radius: 25%;
+    margin-top: 10%;
+}
+
+.survey-questions{
+    overflow-y: scroll;
+    position: fixed;
+    height: 60%;
+    background-color: #afd0c7;
+    width: 1100px;
+    padding: 25px;
+    border-radius: 30px 30px 30px 30px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 15%;
+    margin-top: 10%;  
+}
+
+
+.survey-questions .doctor-qestions-title{
+    color: #324960;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.survey-questions .doctor-name-and-specialitation{
+    color: #324960;
+    margin-left: 0%;
+    margin-top: 0px;
+}
+
+.survey-questions .medicalstaff-qestions-title{
+    color:  #324960;
+    margin-left: 0%;
+    margin-top: 3.5%;
+}
+
+.survey-questions .hospital-qestions-title{
+    color:  #324960;
+    margin-left: 0%;
+    margin-top: 3.5%;
+}
+
+.survey-questions .survey-comment-title{
+    color:  #324960;
+    margin-left: 0%;
+    margin-top: 3.5%;
+}
+
+.questions-about-doctor {
+    margin-top: 2%;
+    margin-right: 22%;
+    counter-reset: serial-number;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    background-color: white;
+}
+
+
+.questions-about-medicalstaff {
+    margin-top: 2%;
+    counter-reset: serial-number;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    background-color: white;
+}
+
+.questions-about-hospital {
+    margin-top: 2%;
+    counter-reset: serial-number;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    background-color: white;
+}
+
+.questions-about-doctor td, .questions-about-doctor th, .questions-about-medicalstaff td, .questions-about-medicalstaff th,
+.questions-about-hospital td, .questions-about-hospital th{
+    text-align: center;
+    padding: 8px;
+   
+}
+
+.questions-about-doctor td, .questions-about-medicalstaff td, .questions-about-hospital td {
+    border-right: 1px solid #204264c0;
+    font-size: 16px;
+}
+
+.questions-about-doctor th, .questions-about-medicalstaff th, .questions-about-hospital th{
+    color: #ffffff;
+    background: #204264c0;
+}
+
+.questions-about-doctor thead th:nth-child(odd), .questions-about-medicalstaff thead th:nth-child(odd),
+.questions-about-hospital thead th:nth-child(odd){
+    color: #ffffff;
+    background: #324960;
+}
+
+.questions-about-doctor tr:nth-child(even), .questions-about-medicalstaff  tr:nth-child(even), 
+.questions-about-hospital tr:nth-child(even){
+    background: rgb(230, 227, 227);
+}
+
+.survey-comment{
+    width: 600px;
+    margin-left: 0%;
+    margin-top: 1.5%;   
+}
+
+.wrapper-form-survey-after-examination {
+    position: fixed;
+    z-index: 1;
+    height: 700px;
+    width: 854px;
+    margin: 50px auto;
+    margin-left: 21%;
+    margin-top: 0%;
+    border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    transition: 2.3 ease;
+    cursor: pointer;
+}
+
+.survey-comment-btn{
+    height: 200px;
+    width: 225px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: -20px;
+    position: relative;
+}
+
+.survey-comment-btn p{
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    height: 50px;
+    font-family: 'Trocchi', serif;
+    margin: 0 0 0 110px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #054f5294;
+}
+
+
+.survey-comment-btn button{
+    float: right;
+    display: inline-block;
+    height: 60px;
+    width: 156px;
+    margin-top: 10%;
+    margin-right: -70%;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #79b0a1;
+    cursor: pointer;
+    outline: none;
+}
+
+.survey-comment-btn button:hover{
+    background-color: #054f5294;
+}

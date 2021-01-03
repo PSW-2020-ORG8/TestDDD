@@ -1,0 +1,151 @@
+﻿<Window x:Class="HospitalMap.WPF.SearchedRooms"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalMap.WPF"
+        mc:Ignorable="d"
+        Title="SearchedRooms" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <TabControl HorizontalAlignment="Left" Height="389" Margin="10,13,0,0" VerticalAlignment="Top" Width="769">
+            <TabItem Header="PatientsRoom" Width="100">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="77*"/>
+                        <ColumnDefinition Width="305*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid  x:Name="PatientsRoomDataGrid" 
+                               AutoGenerateColumns="False" 
+                               SelectionMode="Single" 
+                               ItemsSource="{Binding Path=PatientsRooms}"                               
+                               IsReadOnly="True" 
+                                HorizontalAlignment="Left" Height="274" Margin="29,18,0,0" VerticalAlignment="Top" Width="710" Grid.ColumnSpan="2"
+                               SelectedItem="{Binding Path=SelectedPatientRoom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn  Binding= "{Binding Path=NameOfRoom}" Header="Room name" Width="237"></DataGridTextColumn>
+                            <DataGridTextColumn  Binding= "{Binding Path=NameOfClinic}"  Header="Clinic" Width="237"></DataGridTextColumn>
+                            <DataGridTextColumn  Binding= "{Binding Path=NumberOfFloor}"  Header="Floor number" Width="237"></DataGridTextColumn>
+
+
+                        </DataGrid.Columns>
+
+                        <DataGrid.Resources>
+
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Background" Value="Aqua"/>
+                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                                <Setter Property="BorderBrush" Value="black"/>
+
+                            </Style>
+
+                        </DataGrid.Resources>
+
+                    </DataGrid>
+
+                    <Button Background="CornflowerBlue" Content="Show" Grid.Column="1" HorizontalAlignment="Left" Margin="173,307,0,0" VerticalAlignment="Top" Width="114" Height="34" Click="Button_Click"/>
+
+
+
+
+                </Grid>
+
+
+
+            </TabItem>
+
+            <TabItem Header="DoctorsRoom"  Width="100">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="58*"/>
+                        <ColumnDefinition Width="705*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <DataGrid  x:Name="DoctorsRoomDataGrid"
+                               AutoGenerateColumns="False"
+                               SelectionMode="Single" 
+                               IsReadOnly="True" 
+                               ItemsSource="{Binding Path=DoctorsRooms}"  
+                               HorizontalAlignment="Left" Height="262" Margin="29,18,0,0" VerticalAlignment="Top" Width="710"
+                               SelectedItem="{Binding Path=SelectedDoctorRoom, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn  Binding= "{Binding Path=NameOfRoom}" Header="Room name" Width="237"></DataGridTextColumn>
+                            <DataGridTextColumn  Binding= "{Binding Path=NameOfClinic}"  Header="Clinic" Width="237"></DataGridTextColumn>
+                            <DataGridTextColumn  Binding= "{Binding Path=NumberOfFloor}"  Header="Floor number" Width="237"></DataGridTextColumn>
+
+                        </DataGrid.Columns>
+
+                        <DataGrid.Resources>
+
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Background" Value="Aqua"/>
+                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                                <Setter Property="BorderBrush" Value="black"/>
+
+                            </Style>
+
+                        </DataGrid.Resources>
+
+                    </DataGrid>
+
+                    <Button Background="CornflowerBlue" Content="Show" HorizontalAlignment="Left" Margin="269,299,0,0" VerticalAlignment="Top" Width="114" Height="34" Click="Button_Click_1" Grid.Column="1"/>
+
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="AnothersRooms" Width="100">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="77*"/>
+                        <ColumnDefinition Width="305*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid  x:Name="AnotherRoomsDataGrid" 
+                               AutoGenerateColumns="False" 
+                               SelectionMode="Single" 
+                               ItemsSource="{Binding Path=AnothersRooms}"                               
+                               IsReadOnly="True" 
+                                HorizontalAlignment="Left" Height="262" Margin="29,18,0,0" VerticalAlignment="Top" Width="710" Grid.ColumnSpan="2">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn  Binding= "{Binding Path=NameOfRoom}" Header="Room name" Width="237"></DataGridTextColumn>
+                            <DataGridTextColumn  Binding= "{Binding Path=NameOfClinic}"  Header="Clinic" Width="237"></DataGridTextColumn>
+                            <DataGridTextColumn  Binding= "{Binding Path=NumberOfFloor}"  Header="Floor number" Width="237"></DataGridTextColumn>
+
+
+                        </DataGrid.Columns>
+
+                        <DataGrid.Resources>
+
+                            <Style TargetType="{x:Type DataGridColumnHeader}">
+                                <Setter Property="Background" Value="Aqua"/>
+                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                                <Setter Property="BorderBrush" Value="black"/>
+
+                            </Style>
+
+                        </DataGrid.Resources>
+
+                    </DataGrid>
+
+                    <Button Background="CornflowerBlue" Content="Show" Grid.Column="1" HorizontalAlignment="Left" Margin="173,307,0,0" VerticalAlignment="Top" Width="114" Height="34" Click="Button_Click_2"/>
+
+
+                </Grid>
+
+
+
+            </TabItem>
+
+
+
+
+
+        </TabControl>
+
+
+    </Grid>
+</Window>

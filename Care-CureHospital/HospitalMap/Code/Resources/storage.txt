@@ -1,0 +1,74 @@
+[
+  { "IdS": "s1A",
+    "Id": "1",
+    "Name": "Aspirin",
+    "Quantity": "10",
+    "Location": "Dr1A"
+  },
+  {"IdS": "s1",
+   "Id": "2",
+   "Name": "Bandages",
+   "Quantity": "25",
+   "Location": "Dr2A"
+  },
+  {"IdS": "s1",
+   "Id": "3",
+   "Name": "Hydrogen",
+   "Quantity": "5",
+   "Location": "Sr1A"
+  },
+  {"IdS": "s1",
+   "Id": "12",
+   "Name": "Asepsol",
+   "Quantity": "5",
+   "Location": "s1"
+  },
+  {"IdS": "s2B",
+   "Id": "4",
+   "Name": "Povidone iodine",
+   "Quantity": "9",
+   "Location": "Sr2A"
+  },
+  {"IdS": "s1",
+   "Id": "5",
+   "Name": "Bruefen",
+   "Quantity": "4",
+   "Location": "s1"
+  },
+  {"IdS": "s1",
+   "Id": "6",
+   "Name": "Covid-19",
+   "Quantity": "4",
+   "Location": "s1"
+  },
+  {"IdS": "s1A",
+   "Id": "7",
+   "Name": "Hemomicin",
+   "Quantity": "4",
+   "Location": "s1A"
+  },
+  {"IdS": "s1A",
+   "Id": "8",
+   "Name": "Azaran",
+   "Quantity": "4",
+   "Location": "s1A"
+  },
+  {"IdS": "s1A",
+   "Id": "9",
+   "Name": "Longacef",
+   "Quantity": "4",
+   "Location": "s1A"
+  },
+  {"IdS": "s2B",
+   "Id": "10",
+   "Name": "Clexane",
+   "Quantity": "4",
+   "Location": "s2B"
+  },
+  {"IdS": "s2B",
+   "Id": "11",
+   "Name": "Midol",
+   "Quantity": "4",
+   "Location": "s2B"
+  }
+]

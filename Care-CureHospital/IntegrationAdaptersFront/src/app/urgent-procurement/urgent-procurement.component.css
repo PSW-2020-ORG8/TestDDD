@@ -1,0 +1,19 @@
+h3{
+    margin-top: 3%;
+}
+
+.buttonHttp{
+    margin-left: 2%;
+}
+
+.buttonGrpc{
+    margin-left: 30%;
+}
+
+.procurement{
+    height:50em;
+    background-size:cover;
+    width:auto;
+    background-position:center;
+    background-image:url('\src\assets\hospital.jpg');
+}

@@ -1,0 +1,77 @@
+.boundary-for-scroll-block-malicious-patients {
+    position: fixed;
+    width: 100%;
+    height: 185px;
+    padding: 20px;
+    margin-top:  0px;
+    background-color: #6d989a;
+    z-index: 4;
+}
+
+.malicious-patients-vertical-line {
+    position: fixed;
+    border-left: 4px solid black;
+    height: 60%;
+    margin-left: 15%;
+    border-radius: 25%;
+    margin-top: 10%;
+}
+
+.block-malicious-patients{
+    position: fixed;
+    height: 60%;
+    width: 1100px;
+    padding: 25px;
+    margin-left: 15%;
+    margin-top: 10%;   
+}
+
+.block-malicious-patients .block-malicious-patients-title{
+    color: white;
+    margin-left: 0%;
+    margin-top: 0%;
+}
+
+.table-block-malicious-patients {
+    margin-top: 2%;
+    margin-right: 22%;
+    counter-reset: serial-number;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    background-color: white;
+}
+
+.table-block-malicious-patients td, .table-block-malicious-patients th{
+    text-align: center;
+    padding: 8px;
+   
+}
+
+.table-block-malicious-patients td{
+    border-right: 1px solid #204264c0;
+    font-size: 16px;
+}
+
+.table-block-malicious-patients th{
+    color: #ffffff;
+    background: #204264c0;
+}
+
+.table-block-malicious-patients thead th:nth-child(odd){
+    color: #ffffff;
+    background: #324960;
+}
+
+.table-block-malicious-patients tr:nth-child(even){
+    background: rgb(230, 227, 227);
+}
+
+
+
+

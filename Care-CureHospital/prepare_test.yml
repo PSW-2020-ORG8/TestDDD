@@ -1,0 +1,72 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: HealthClinicDB
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - mysql-db:/var/lib/mysql
+      - app-sql:/docker-entrypoint-initdb.d/
+    networks:
+      - public_net
+  Backend:
+    build: 
+      context: .
+      dockerfile: Backend/Dockerfile
+    image: astevanovic/backend:latest
+    container_name: backend
+    restart: on-failure
+    environment:
+      DATABASE_USERNAME: user
+      DATABASE_PASSWORD: user
+      DATABASE_HOST: mysql
+      DATABASE_SCHEMA: HealthClinicDB
+      SHOW_ENV: 'TRUE'
+    depends_on:
+      - mysql
+    expose: 
+      - "80"
+    ports:
+      - "6000:80"
+    volumes:
+      - app-sql:/app/sql
+    networks:
+      - public_net
+  IntegrationTests:
+    build: 
+      context: .
+      dockerfile: IntegrationTests/Dockerfile
+    image: astevanovic/integrationtests:latest
+    container_name: integrationtests
+    environment:
+      DATABASE_USERNAME: user
+      DATABASE_PASSWORD: user
+      DATABASE_HOST: mysql
+      DATABASE_SCHEMA: HealthClinicDB
+      SHOW_ENV: 'TRUE'
+      WAIT_HOSTS: mysql:3306
+      WAIT_AFTER_HOSTS: 30
+    depends_on:
+      - mysql
+    expose:
+      - "80"
+    ports:
+      - "6005:80"
+    networks:
+      - public_net
+networks:
+  public_net:
+    driver: bridge
+volumes:
+  mysql-db:
+  app-sql:

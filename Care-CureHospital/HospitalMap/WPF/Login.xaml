@@ -1,0 +1,28 @@
+﻿<Window x:Class="HospitalMap.WPF.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalMap.WPF"
+        mc:Ignorable="d"
+        Title="Login" Height="400" Width="400" WindowStartupLocation="CenterScreen" Background="Gray">
+    <Canvas>
+        <Image  Source="/Images/hospital.png" Height="116" Canvas.Left="120" Canvas.Top="19" Width="160"/>
+        <Label Content="Username:" Canvas.Left="80" Canvas.Top="162" Height="27" Width="66" RenderTransformOrigin="0.712,0.631"/>
+        <Label Content="Password:" Canvas.Left="80" Canvas.Top="199" Height="27" Width="66" RenderTransformOrigin="0.454,-0.179"/>
+        <TextBox x:Name="usernameBox" Canvas.Left="151" Canvas.Top="167" TextWrapping="Wrap" Width="120"/>
+        <PasswordBox x:Name="passwordBox" Canvas.Left="151" Canvas.Top="204" Width="120"/>
+        <Button Content="Login" Canvas.Left="151" Canvas.Top="280" Width="120" Click="ButtonClick"/>
+
+        <TextBox x:Name="errorCredentials" Canvas.Left="151" Canvas.Top="305" Text="invalid credentials" TextWrapping="Wrap" Width="120" Background="#FFFD0404" Visibility="Hidden"/>
+        <TextBox x:Name="errorRoles" Canvas.Left="151" Canvas.Top="305" Text="please select role" TextWrapping="Wrap" Width="107" Background="#FFFD0404" Visibility="Hidden"/>
+        <ComboBox x:Name="_role" Canvas.Left="151" Canvas.Top="240" Width="120">
+            <ComboBoxItem Content="Doctor"/>
+            <ComboBoxItem Content="Patient"/>
+            <ComboBoxItem Content="Secretary"/>
+            <ComboBoxItem Content="Manager"/>
+        </ComboBox>
+        <Label Content="Role:" Canvas.Left="80" Canvas.Top="238"/>
+
+    </Canvas>
+</Window>

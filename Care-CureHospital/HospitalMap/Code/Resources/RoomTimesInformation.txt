@@ -1,0 +1,34 @@
+[
+  {
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "HospitalA",
+    "NameOfRoom": "HospitalA",
+    "FromDateTime": "00",
+    "ToDateTime": "24"
+  },
+  {
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "HospitalB",
+    "NameOfRoom": "HospitalB",
+    "FromDateTime": "00",
+    "ToDateTime": "24"
+  },
+  {
+    "NameOfClinic": "A",
+    "NumberOfFloor": "0",
+    "IdOfRoom": "PhA",
+    "NameOfRoom": "Pharmacy",
+    "FromDateTime": "00",
+    "ToDateTime": "24"
+  },
+  {
+    "NameOfClinic": "B",
+    "NumberOfFloor": "0",
+    "IdOfRoom": "PhB",
+    "NameOfRoom": "Pharmacy",
+    "FromDateTime": "00",
+    "ToDateTime": "24"
+  }
+]

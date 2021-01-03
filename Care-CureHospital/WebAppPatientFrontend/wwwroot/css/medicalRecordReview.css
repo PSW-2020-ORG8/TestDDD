@@ -1,0 +1,137 @@
+
+/* PART FOR MEDICAL RECORD*/
+
+
+.fields-to-fill-medical-record {
+    margin-top: 220px;
+}
+
+.wrapper-form-medical-record {
+    position: fixed;
+    z-index: 6;
+    height: 560px;
+    width: 854px;
+    margin: 50px auto;
+    margin-left: 25%;
+    margin-top: -1%;
+    border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);  
+    transition: 2.3 ease;
+    cursor: pointer;
+}
+
+.data-for-medical-record {
+    margin-top: 0%;
+    height: 570px;
+    width: 854px;
+    border-radius: 0 7px 10px 7px;
+    background-color: #afd0c7;
+}
+
+.text-for-medical-record {
+    height: 300px;
+    width: 454px;
+    text-align: center;
+    margin-left: 190px;
+    margin-top: -10px;
+}
+
+.text-for-medical-record h1 {
+    margin: 0 0 47px 8px; 
+    padding-top: 40px;
+    font-size: 34px;
+    color: #474747;
+    font-family: 'Bentham', serif;
+}
+
+/* STATIC MENU ITEMS */
+
+.main-medical-record {
+    max-width: 1200px;
+    margin: auto;
+    position: fixed;
+    z-index: 5;
+    margin-top: -11%
+}
+
+.logo-medical-record img {
+    float: left;
+    width: 80px;
+    height: 60px;
+    position: fixed;
+    z-index: 5;
+    margin-top: -10%
+}
+
+.web-name-medical-record {
+    position: relative;
+    z-index: 5;
+}
+
+.web-name-medical-record h3 {
+    color: black;
+    font-size: 18px;
+    margin-left: 0.5%;
+    z-index: 5;
+}
+
+.logo-and-name-medical-record {
+    position: fixed;
+    margin-left: 4%;
+    z-index: 5;
+}
+
+/* SCROLL */
+
+.scroll-in-medical-record {
+    overflow-y: scroll;
+    height: 370px;
+    width: 620px;
+    border: 1px solid #054f5294;
+    padding: 20px 20px 35px 20px;
+    margin-left: -20%;
+    margin-top: -22px;
+}
+
+.scroll-in-medical-record-allergies {
+    overflow-y: scroll;
+    height: 120px;
+    width: 130px;
+    border: 1px solid #054f5294;
+    padding: 20px 20px 35px 20px;
+    margin-left: 35.5%;
+}
+
+.scroll-in-medical-record-medicaments {
+    overflow-y: scroll;
+    height: 120px;
+    width: 130px;
+    border: 1px solid #054f5294;
+    padding: 20px 20px 35px 20px;
+    margin-left: 35.5%;
+}
+
+.scroll-in-medical-record-diagnosis {
+    overflow-y: scroll;
+    height: 120px;
+    width: 130px;
+    border: 1px solid #054f5294;
+    padding: 20px 20px 35px 20px;
+    margin-left: 20%;
+}
+
+.scroll-in-medical-record-symptoms {
+    overflow-y: scroll;
+    height: 120px;
+    width: 130px;
+    border: 1px solid #054f5294;
+    padding: 20px 20px 35px 20px;
+    margin-left: 50%;
+    margin-top: -36.5% 
+}
+
+.scroll-in-medical-record .scroll-in-medical-record-label-bold {
+    font-weight: bold;
+}

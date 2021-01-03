@@ -1,0 +1,19 @@
+<div class="d-flex flex-row bd-highlight mb-2">
+    <div class="form-froup row" style="width: 100%;">
+        <label class="col-sm-2 col-form-label">Medicament name</label>
+        <div class="col-sm-10">
+           <select class="form-control" [(ngModel)]= "MedicamentList">
+                <option *ngFor="let med of MedicamentList">
+                {{med.name}}
+               </option>
+           </select>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary float-right m-2" (click)="sendRequest()">Send</button>
+        </div>
+        <br/>
+        <div>
+            <label class="col-sm-2 col-form-label" style="margin-top: 70%;margin-left: -80%;">Response:</label>
+        </div>
+    </div>
+</div>

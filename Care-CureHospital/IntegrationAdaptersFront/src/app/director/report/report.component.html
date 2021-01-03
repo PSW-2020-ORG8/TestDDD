@@ -1,0 +1,25 @@
+<div class="d-flex flex-row bd-highlight mb-2">
+    <div class="form-froup row" style="width: 100%;">
+        <label class="col-sm-2 col-form-label">Medicament name</label>
+        <div class="col-sm-10">
+           <input type="text" class="form-control" 
+            placeholder="Enter medicament name" [(ngModel)]="ReportList.medicamentName">
+        </div>
+        <label class="col-sm-2 col-form-label">Consumed medication</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" 
+            placeholder="Enter consumption of medication" [(ngModel)]="ReportList.quantity">
+        </div>
+        <label class="col-sm-2 col-form-label">From date</label>
+        <div class="col-sm-10">
+            <input type="date" [(ngModel)]="ReportList.fromDate">
+        </div>
+        <label class="col-sm-2 col-form-label">To date</label>
+        <div class="col-sm-10">
+            <input type="date" [(ngModel)]="ReportList.toDate">
+        </div>
+    </div>
+</div>
+<button class="btn btn-primary" (click)="addReport()">Add</button>
+    
+ 

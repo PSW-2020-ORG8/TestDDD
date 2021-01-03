@@ -1,0 +1,67 @@
+﻿<Window x:Class="HospitalMap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalMap"
+        mc:Ignorable="d"
+         Title="MainWindow" Height="650" Width="1000" WindowStartupLocation="CenterScreen">
+    <Canvas Background="Gray" x:Name="canvas">
+        <Image Source="Images/hospital.jpg"  Width="31" Height="42" Canvas.Left="435" Canvas.Top="90" Visibility="Visible" />
+        <TabControl Height="202" Canvas.Left="30" Canvas.Top="37" Width="149" Background="LightBlue" >
+            <TabItem Header="Clinic 1">
+
+
+                <Menu Margin="21,105,26.2,36.6" RenderTransformOrigin="0.5,0.5" Background="LightGray">
+
+                    <MenuItem Header="      Choose" Width="97" Height="32" RenderTransformOrigin="0.522,0.898">
+
+                        <MenuItem Header=" K1 : GroundFloor" Background="LightGray" Click="GroundFloorClick"/>
+
+                        <MenuItem Header=" K1 : First floor" Height="18"  Background="LightGray" Click="FirstFloor"/>
+
+                        <MenuItem Header="  Main map" Height="18"  Background="LightGray" Click="Map"/>
+
+                    </MenuItem>
+                </Menu>
+
+
+            </TabItem>
+
+            <TabItem Header="Clinic 2">
+                <Menu Margin="21,105,26.2,36.6" RenderTransformOrigin="0.5,0.5" Background="LightGray">
+
+                    <MenuItem Header="      Choose" Width="95" Height="33" RenderTransformOrigin="0.522,0.898">
+
+                        <MenuItem Header=" K2 : GroundFloor" Background="LightGray" Click="GroundFloor2"/>
+
+                        <MenuItem Header=" K2 : First floor" Height="18"  Background="LightGray" Click="SecondFloor"/>
+
+                        <MenuItem Header=" Main map" Height="18"  Background="LightGray" Click="Map"/>
+
+                    </MenuItem>
+                </Menu>
+
+            </TabItem>
+
+
+        </TabControl>
+
+        <Image  Source="Images/hospital.png" Height="73" Canvas.Left="48" Canvas.Top="75" Width="111"/>
+        <Image Source="Images/hospital.jpg"  Width="32" Height="41" Canvas.Left="696" Canvas.Top="91"/>
+        <Image Source="Images/parking.jpg"  Width="20" Height="22" Canvas.Left="325" Canvas.Top="124" RenderTransformOrigin="1.8,1.85"/>
+        <Image Source="Images/parking.jpg"  Width="19" Height="21" Canvas.Left="826" Canvas.Top="127" RenderTransformOrigin="1.8,1.85"/>
+        <Button Background="CornflowerBlue" Content="Search" Canvas.Left="29" Canvas.Top="352" RenderTransformOrigin="-0.454,-1.541" Width="148" Height="33" Click="ButtonClick"/>
+        <TextBox x:Name="search" Canvas.Left="29" Canvas.Top="260" Text="" TextWrapping="Wrap" Width="149" Height="33" FontSize="20"/>
+        <Button Content="Sign out" Canvas.Left="54" Canvas.Top="528" Height="38" Width="101" Background="#FFEE2A2A" Click="ButtonClick1"/>
+
+        <RadioButton x:Name="RoomsRadioButon" Content="Rooms" Canvas.Left="30" Canvas.Top="317"/>
+
+        <RadioButton x:Name="EquipmnetRadioButon" Content="Equipmnet" Canvas.Left="104" Canvas.Top="317" Width="86"/>
+        <Button x:Name="Appointment" Background="CornflowerBlue" Content="Schedule appointment" Canvas.Left="30" Canvas.Top="436" RenderTransformOrigin="-0.454,-1.541" Width="148" Height="33" Click="Button_Click" />
+
+
+
+
+    </Canvas>
+</Window>

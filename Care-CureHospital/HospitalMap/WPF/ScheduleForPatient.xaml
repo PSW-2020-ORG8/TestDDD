@@ -1,0 +1,16 @@
+﻿<Window x:Class="HospitalMap.WPF.ScheduleForPatient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalMap.WPF"
+        mc:Ignorable="d"
+        Title="ScheduleForPatient" Height="450" Width="800"  WindowStartupLocation="CenterScreen" Background="Gray">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="100,166,0,0" Text="Select patient:" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" FontSize="24"/>
+        <ComboBox x:Name="Pacijenti"  HorizontalAlignment="Left" Height="38" Margin="400,166,0,0" VerticalAlignment="Top" Width="296" ItemsSource="{Binding Path= AllPatients,Mode=TwoWay}"  SelectedItem="{Binding Path=SelektovaniPacijent, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        <Button Background="CornflowerBlue" Content="Schedule" HorizontalAlignment="Left" Margin="617,358,0,0" VerticalAlignment="Top" Height="33" Width="110" FontSize="24" Click="Button_Click"/>
+        <Button Background="CornflowerBlue" Content="Cancel" HorizontalAlignment="Left" Margin="462,358,0,0" VerticalAlignment="Top" Height="33" Width="110" FontSize="24" />
+
+    </Grid>
+</Window>

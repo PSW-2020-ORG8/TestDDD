@@ -1,0 +1,20 @@
+.director{
+    height:50em;
+    background-size:cover;
+    width:auto;
+    background-position:center;
+    background-image:url('\src\assets\hospital.jpg');
+}
+
+.reportButton{
+    margin-top: 3%;
+}
+
+.buttonSave{
+    margin-left: 50%;
+}
+
+.tenderButton{
+    margin-top: 3%;
+    margin-left: 5%;
+}

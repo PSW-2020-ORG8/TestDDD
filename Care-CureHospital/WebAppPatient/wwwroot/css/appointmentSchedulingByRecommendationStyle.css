@@ -1,0 +1,334 @@
+.boundary-for-scroll-appointment-scheduling-by-recommendation {
+    position: fixed;
+    width: 100%;
+    height: 185px;
+    padding: 20px;
+    margin-top: 0px;
+    background-color: #6d989a;
+    z-index: 4;
+}
+
+.logo-and-name-appointment-scheduling-by-recommendation {
+    position: fixed;
+    margin-left: 4%;
+    margin-top: 1%;
+    z-index: 5;
+}
+
+.logo-appointment-scheduling-by-recommendation img {
+    float: left;
+    width: 80px;
+    height: 60px;
+    position: fixed;
+    z-index: 5;
+}
+
+.web-name-appointment-scheduling-by-recommendation {
+    position: relative;
+    z-index: 5;
+}
+
+.web-name-appointment-scheduling-by-recommendation h3 {
+    color: black;
+    font-size: 18px;
+    margin-left: -10%;
+    z-index: 5;
+}
+
+.main-appointment-scheduling-by-recommendation {
+    max-width: 1200px;
+    margin: auto;
+    position: fixed;
+    z-index: 5;
+    margin-top: 1%
+}
+
+.form-for-appointment-scheduling-by-recommendation {
+    position: fixed;
+    width: 780px;
+    height: 500px;
+    padding: 20px;
+    margin-top: 12%;
+    margin-left: 28%;
+    background-color: #afd0c7;
+    z-index: 6;
+    border-radius: 30px 30px 30px 30px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+
+.form-title-appointment-scheduling-by-recommendation select {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 24%;
+}
+
+.form-title-appointment-scheduling-by-recommendation h1 {
+    padding-top: 18px;
+    font-size: 30px;
+    color: #474747;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.form-title-appointment-scheduling-by-recommendation h3 {
+    padding-top: 12px;
+    font-size: 22px;
+    color: #474747;
+    text-align: center
+}
+
+.form-title-appointment-scheduling-by-recommendation input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin-top: 2%;
+    margin-left: 24%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Bentham', serif;
+}
+
+.form-title-appointment-scheduling-by-recommendation textarea {
+    width: 90%;
+    padding: 12px 40px;
+    margin: 0px 25px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Bentham', serif;
+}
+
+.form-title input[type=checkbox] {
+    margin: 0px 25px 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.form-title input[type="text"]::placeholder {
+    text-align: center;
+}
+
+.next-btn-appointment-scheduling-by-recommendation {
+    height: 200px;
+    width: 225px;
+    margin-top: 0px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.next-btn-appointment-scheduling-by-recommendation p {
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    height: 50px;
+    font-family: 'Trocchi', serif;
+    margin: 0 0 0 110px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #054f5294;
+}
+
+.next-btn-appointment-scheduling-by-recommendation button {
+    display: inline-block;
+    height: 60px;
+    width: 156px;
+    margin-top: 50.7%;
+    margin-left: 260%;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #79b0a1;
+    cursor: pointer;
+    outline: none;
+}
+
+.next-btn-appointment-scheduling-by-recommendation button:hover {
+    background-color: #054f5294;
+}
+
+.back-btn-appointment-scheduling-by-recommendation {
+    height: 200px;
+    width: 225px;
+    margin-top: 0px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.back-btn-appointment-scheduling-by-recommendation p {
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    height: 50px;
+    font-family: 'Trocchi', serif;
+    margin: 0 0 0 110px;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #054f5294;
+}
+
+.back-btn-appointment-scheduling-by-recommendation button {
+    display: inline-block;
+    height: 60px;
+    width: 156px;
+    margin-left: 10%;
+    margin-top: -15%;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #79b0a1;
+    cursor: pointer;
+    outline: none;
+}
+
+.back-btn-appointment-scheduling-by-recommendation button:hover {
+    background-color: #054f5294;
+}
+
+.scroll-in-appointment-scheduling-by-recommendation {
+    overflow-y: scroll;
+    height: 237px;
+    width: 740px;
+    margin-left: 3%;
+}
+
+/* TABELA */
+.tdbreak {
+    word-break: break-all;
+    max-width:300px;
+  }
+
+.table-wrapper-appointment-scheduling-by-recommendation{
+    width: 720px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+
+.fl-table-appointment-scheduling-by-recommendation {
+    counter-reset: serial-number;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;
+    background-color: white;
+}
+
+.fl-table-appointment-scheduling-by-recommendation  td.serialNumber:first-child:before {
+    counter-increment: serial-number;  /* Increment the serial number counter */
+    content: counter(serial-number);  /* Display the counter */
+}
+
+.fl-table-appointment-scheduling-by-recommendation td, .fl-table-appointment-scheduling-by-recommendation th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table-appointment-scheduling-by-recommendation td {
+    border-right: 1px solid #204264c0;
+    font-size: 16px;
+}
+
+.fl-table-appointment-scheduling-by-recommendation thead th {
+    color: #ffffff;
+    background: #204264c0;
+}
+
+
+.fl-table-appointment-scheduling-by-recommendation thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table-appointment-scheduling-by-recommendation tr:nth-child(even) {
+    background: rgb(230, 227, 227);
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .fl-table-appointment-scheduling-by-recommendation {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper-appointment-scheduling-by-recommendation:before {
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    .fl-table-appointment-scheduling-by-recommendation thead, .fl-table-appointment-scheduling-by-recommendation tbody, .fl-table-appointment-scheduling-by-recommendation thead th {
+        display: block;
+    }
+    .fl-table-appointment-scheduling-by-recommendation thead th:last-child{
+        border-bottom: none;
+    }
+    .fl-table-appointment-scheduling-by-recommendation thead {
+        float: left;
+    }
+    .fl-table-appointment-scheduling-by-recommendation tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    .fl-table-appointment-scheduling-by-recommendation td, .fl-table-appointment-scheduling-by-recommendation th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 13px;
+        text-overflow: ellipsis;
+    }
+    .fl-table-appointment-scheduling-by-recommendation thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    .fl-table-appointment-scheduling-by-recommendation tbody tr {
+        display: table-cell;
+    }
+    .fl-table-appointment-scheduling-by-recommendation tbody tr:nth-child(odd) {
+        background: none;
+    }
+    .fl-table-appointment-scheduling-by-recommendation tr:nth-child(even) {
+        background: transparent;
+    }
+    .fl-table-appointment-scheduling-by-recommendation tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table-appointment-scheduling-by-recommendation tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    .fl-table-appointment-scheduling-by-recommendation tbody td {
+        display: block;
+        text-align: center;
+    }
+}

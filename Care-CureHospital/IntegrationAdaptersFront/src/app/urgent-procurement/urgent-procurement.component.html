@@ -1,0 +1,19 @@
+<div class="procurement">
+    <h3 style="text-align:center">Order medicament</h3>
+    <div id="procurementForm">
+        <form>
+            <div>
+                <label class="col-sm-2 col-form-label">Medicament</label>
+                <input type="text" placeholder="Medicament name" name="Name" class="form-control"/>    
+                <label class="col-sm-2 col-form-label">Quantity</label>
+                <input type="text" placeholder="Quantity" name="Quantity" class="form-control"/>   
+            </div>
+            <br/>
+            <br/>
+            <div  style="text-align:center" >
+              <button mat-raised-button class="buttonHttp" (click)="sendHttpRequest()">Send-Http</button>
+              <button mat-raised-button class="buttonGrpc">Send-Grpc</button>
+            </div>
+            </form>
+    </div>
+</div>

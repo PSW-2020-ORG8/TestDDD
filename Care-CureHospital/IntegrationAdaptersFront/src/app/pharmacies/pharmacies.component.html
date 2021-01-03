@@ -1,0 +1,23 @@
+<div class="pharmacy">
+    <h3 style="text-align:center">Register pharmacy</h3>
+    <form (ngSubmit)="onSubmitPharmacy()">
+    <div>
+    
+        <p>
+            <label for="username" class="col-sm-2 col-form-label">Pharmacy name</label>
+            <input type="text" placeholder="Pharmacy name" name = "Name" class="form-control" [(ngModel)]="pharmacy.name"/>    
+        </p>
+        <p>
+            <label for="apikey"class="col-sm-2 col-form-label">Api Key</label>
+            <input type="text" placeholder="Api Key" name = "Api" class="form-control" [(ngModel)]="pharmacy.key"/>    
+        </p>
+        <p>
+            <label for="link" class="col-sm-2 col-form-label">Endpoint</label>
+            <input type="text" placeholder="Endpoint"  name = "Link" class="form-control" [(ngModel)]="pharmacy.link"/>    
+       </p>
+    </div>
+    <div  style="text-align:center" >
+      <button mat-raised-button type="submit">Register</button>    
+    </div>
+  </form>
+</div>

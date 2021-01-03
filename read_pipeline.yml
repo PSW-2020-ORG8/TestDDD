@@ -1,0 +1,22 @@
+schedules:
+- cron: "1 23 * * Sun"
+  displayName: Monday sprint end
+  branches:
+    include:
+    - master
+    - develop
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+   pip install PyGithub
+   python premissions.py $USERNAME $PASS pull
+  env:
+    USERNAME: $(username)
+    PASS: $(pass)
+

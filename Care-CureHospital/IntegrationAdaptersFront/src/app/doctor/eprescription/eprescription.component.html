@@ -1,0 +1,38 @@
+<div class="d-flex flex-row bd-highlight mb-2">
+    <div class="form-froup row" style="width: 100%;">
+        <label class="col-sm-2 col-form-label">Patient name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" 
+            placeholder="Enter patient name" [(ngModel)]="EPrescriptionList.patientName">
+        </div>
+        <br/>
+        <br/>
+        <label class="col-sm-2 col-form-label">Comment</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" 
+                placeholder="Enter comment" [(ngModel)]="EPrescriptionList.comment">
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <label class="col-sm-2 col-form-label">Medication</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" 
+            placeholder="Enter medication" [(ngModel)]="EPrescriptionList.medicamentName">
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <label class="col-sm-2 col-form-label">Publishing date</label>
+        <br/>
+        <div class="col-sm-10">
+            <input type="date" [(ngModel)]="EPrescriptionList.publishingDate">
+        </div> 
+    </div>
+</div>
+<div>
+    <button class="btn btn-primary float-left m-2" (click)="addEPrescription()">Add</button>
+</div>
+<div>
+    <button (click)="generateEP()" class="btn btn-primary float-right m-2">Save</button>
+</div>

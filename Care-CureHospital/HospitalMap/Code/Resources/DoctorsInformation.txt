@@ -1,0 +1,270 @@
+[
+  {
+    "MedicalTerms": [
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "08",
+        "EndTime": "09"
+      },
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "09",
+        "EndTime": "10"
+      },
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "10",
+        "EndTime": "11"
+      },
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "11",
+        "EndTime": "12"
+      },
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "13",
+        "EndTime": "14"
+      }
+    ],
+    "NameOfClinic": "A",
+    "NumberOfFloor": "0",
+    "IdOfRoom": "Dr1A",
+    "NameOfRoom": "Doctor office 1",
+    "NameOfDoctor": "Savo",
+    "SurnameOfDoctor": "Tomic",
+    "JmbgOfDoctor": "666666666666",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": [
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "08",
+        "EndTime": "09"
+      },
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "09",
+        "EndTime": "10"
+      },
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "10",
+        "EndTime": "11"
+      },
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "11",
+        "EndTime": "12"
+      },
+      {
+        "WorkDay": "2020-12-01T00:00:00",
+        "StartTime": "13",
+        "EndTime": "14"
+      }
+    ],
+    "NameOfClinic": "A",
+    "NumberOfFloor": "0",
+    "IdOfRoom": "Dr2A",
+    "NameOfRoom": "Doctor office 2",
+    "NameOfDoctor": "Savo",
+    "SurnameOfDoctor": "Tomic",
+    "JmbgOfDoctor": "666666666666",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": "A",
+    "NumberOfFloor": "2",
+    "IdOfRoom": "Dr3",
+    "NameOfRoom": "Doctor office 3",
+    "NameOfDoctor": "Savo",
+    "SurnameOfDoctor": "Tomic",
+    "JmbgOfDoctor": "666666666666",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": "A",
+    "NumberOfFloor": "2",
+    "IdOfRoom": "Dr4",
+    "NameOfRoom": "Doctor office 4",
+    "NameOfDoctor": "Uros",
+    "SurnameOfDoctor": "Markovic",
+    "JmbgOfDoctor": "112233442200",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "Dr1B",
+    "NameOfRoom": "Doctor office 1",
+    "NameOfDoctor": "Savo",
+    "SurnameOfDoctor": "Tomic",
+    "JmbgOfDoctor": "666666666666",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "Dr2B",
+    "NameOfRoom": "Doctor office 2",
+    "NameOfDoctor": "Stefan",
+    "SurnameOfDoctor": "Tomic",
+    "JmbgOfDoctor": "777777777777",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": "A",
+    "NumberOfFloor": "0",
+    "IdOfRoom": "Sr1A",
+    "NameOfRoom": "Surgery room 1",
+    "NameOfDoctor": "Stefan",
+    "SurnameOfDoctor": "Tomic",
+    "JmbgOfDoctor": "777777777777",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": "A",
+    "NumberOfFloor": "0",
+    "IdOfRoom": "Sr2A",
+    "NameOfRoom": "Surgery room 2",
+    "NameOfDoctor": "Aleksandar",
+    "SurnameOfDoctor": "Milosevic",
+    "JmbgOfDoctor": "999999999999",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": "A",
+    "NumberOfFloor": "0",
+    "IdOfRoom": "Sr3A",
+    "NameOfRoom": "Surgery room 3",
+    "NameOfDoctor": "Savo",
+    "SurnameOfDoctor": "Tomic",
+    "JmbgOfDoctor": "666666666666",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "Sr1B",
+    "NameOfRoom": "Surgery room 1",
+    "NameOfDoctor": "Savo",
+    "SurnameOfDoctor": "Tomic",
+    "JmbgOfDoctor": "666666666666",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "Sr2B",
+    "NameOfRoom": "Surgery room 2",
+    "NameOfDoctor": "Marko",
+    "SurnameOfDoctor": "Popadic",
+    "JmbgOfDoctor": "3030303030",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "Sr3B",
+    "NameOfRoom": "Surgery room 3",
+    "NameOfDoctor": "Uros",
+    "SurnameOfDoctor": "Markovic",
+    "JmbgOfDoctor": "112233442200",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": "A",
+    "NumberOfFloor": "1",
+    "IdOfRoom": "RadA",
+    "NameOfRoom": "Radiology",
+    "NameOfDoctor": "Milica",
+    "SurnameOfDoctor": "Jovanovic",
+    "JmbgOfDoctor": "505050505050",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "RadB",
+    "NameOfRoom": "Radiology",
+    "NameOfDoctor": "Nikoleta",
+    "SurnameOfDoctor": "Tomic",
+    "JmbgOfDoctor": "554433550033",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": "A",
+    "NumberOfFloor": "0",
+    "IdOfRoom": "Card",
+    "NameOfRoom": "Cardiology",
+    "NameOfDoctor": "Uros",
+    "SurnameOfDoctor": "Markovic",
+    "JmbgOfDoctor": "112233442200",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": "A",
+    "NumberOfFloor": "0",
+    "IdOfRoom": "Pat",
+    "NameOfRoom": "Patology",
+    "NameOfDoctor": "Nemanja",
+    "SurnameOfDoctor": "Zec",
+    "JmbgOfDoctor": "09876735463",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "Neur",
+    "NameOfRoom": "Neurology",
+    "NameOfDoctor": "Stefan",
+    "SurnameOfDoctor": "Popadic",
+    "JmbgOfDoctor": "435345400262",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  },
+  {
+    "MedicalTerms": null,
+    "NameOfClinic": null,
+    "NumberOfFloor": null,
+    "IdOfRoom": "Psyc",
+    "NameOfRoom": "Pyshiatric",
+    "NameOfDoctor": "Aleksandar",
+    "SurnameOfDoctor": "Mijatovic",
+    "JmbgOfDoctor": "334637283643",
+    "FromDateTime": "08",
+    "ToDateTime": "16"
+  }
+]

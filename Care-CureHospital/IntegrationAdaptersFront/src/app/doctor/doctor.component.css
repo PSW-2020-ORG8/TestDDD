@@ -1,0 +1,11 @@
+.doctor{
+    height:50em;
+    background-size:cover;
+    width:auto;
+    background-position:center;
+    background-image:url('\src\assets\hospital.jpg');
+}
+
+.prescButton{
+    margin-top: 3%;
+}

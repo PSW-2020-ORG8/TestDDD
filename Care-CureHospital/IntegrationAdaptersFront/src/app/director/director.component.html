@@ -1,0 +1,45 @@
+<div class="director">
+  <button type="button" mat-raised-button data-toggle="modal" data-target="#exampleModal"
+(click)="addclick()" data-backdrop='static' data-keybord="false" class="reportButton">Add report</button>
+<button type="button" mat-raised-button (click)="publishT()" class="tenderButton">Publish tender</button>
+  <br/>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{ModalTitle}}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+          (click)="closeClick()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <app-report [rep]="rep" *ngIf="ActivateAddEditRepComp">
+            </app-report>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
+<form enctype="multipart/form-data">
+<table class="table table-striped" matTableExporter #exporter="matTableExporter">
+    <thead>
+        <tr>
+          <th id="MedicationName">MedicamentName</th>
+          <th id="ConsumedMedication">Quantity</th>
+          <th id="FromDate">FromDate</th>
+          <th id="ToDate">ToDate</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let dataItem of ReportList">
+            <td>{{dataItem.medicamentName}}</td>
+            <td>{{dataItem.quantity}}</td>
+            <td>{{dataItem.fromDate}}</td>
+            <td>{{dataItem.toDate}}</td>
+        </tr>
+    </tbody>
+</table>
+</form> 
+<button (click)="generate()" mat-raised-button class="buttonSave">Save</button>
+</div>
