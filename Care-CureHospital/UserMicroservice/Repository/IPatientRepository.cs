@@ -1,5 +1,4 @@
-﻿using Model.AllActors;
-
+﻿using UserMicroservice.Domain;
 namespace UserMicroservice.Repository
 {
     public interface IPatientRepository : IRepository<Patient, int>

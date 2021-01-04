@@ -1,20 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.IdentityModel.Tokens;
-using Model.AllActors;
-using Model.Doctor;
-using Model.Term;
+using UserMicroservice.Domain;
 using UserMicroservice.Repository;
 using UserMicroservice.Repository.MySQL.Stream;
 using UserMicroservice.Service;
@@ -34,8 +23,6 @@ namespace UserMicroservice
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            services.AddSingleton<IAppointmentService, AppointmentService>(service =>
-                    new AppointmentService(new AppointmentRepository(new MySQLStream<Appointment>()), new PatientService(new PatientRepository(new MySQLStream<Patient>()))));
             services.AddSingleton<IDoctorService, DoctorService>(service =>
                     new DoctorService(new DoctorRepository(new MySQLStream<Doctor>())));
             services.AddSingleton<IPatientService, PatientService>(service =>

@@ -75,6 +75,7 @@ namespace GatewayWebApi
                 endpoints.MapControllers();
             });
 
+           
             await app.UseOcelot();
         }
     }

@@ -672,7 +672,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 53947
+                    "Port": 59947
                 }
             ],
             "UpstreamPathTemplate": "/gateway/doctor/getAllDoctorBySpecializationId/{specializationId}",
@@ -691,7 +691,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 53947
+                    "Port": 59947
                 }
             ],
             "UpstreamPathTemplate": "/gateway/doctor/getAllSpecialization",
@@ -712,7 +712,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 53947
+                    "Port": 59947
                 }
             ],
             "UpstreamPathTemplate": "/gateway/patient",
@@ -731,7 +731,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 53947
+                    "Port": 59947
                 }
             ],
             "UpstreamPathTemplate": "/gateway/patient/getMaliciousPatients",
@@ -750,7 +750,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 53947
+                    "Port": 59947
                 }
             ],
             "UpstreamPathTemplate": "/gateway/patient/blockMaliciousPatient/{patientId}",
@@ -771,7 +771,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 53947
+                    "Port": 59947
                 }
             ],
             "UpstreamPathTemplate": "/gateway/user/login",

@@ -14,14 +14,14 @@ namespace UserMicroservice.Controllers
     [ApiController]
     public class PatientController : ControllerBase
     {
-        private IAppointmentService appointmentService;
         private IPatientService patientService;
 
-        public PatientController(IAppointmentService appointmentService, IPatientService patientService) {
-            this.appointmentService = appointmentService;
+        public PatientController(IPatientService patientService) {
+     
             this.patientService = patientService;
         }
 
+        /*
         [HttpGet()]       // GET /api/patient
         public IActionResult GetAllPatients(int patientId)
         {
@@ -39,7 +39,7 @@ namespace UserMicroservice.Controllers
                 appointmentService.CountCancelledAppointmentsForPatient(patient.Id, DateTime.Now))));
             return Ok(result);
         }
-
+        */
         [HttpPut("blockMaliciousPatient/{patientId}")]       // PUT /api/patient/blockMaliciousPatient/{patientId}
         public IActionResult BlockMaliciousPatient(int patientId)
         {

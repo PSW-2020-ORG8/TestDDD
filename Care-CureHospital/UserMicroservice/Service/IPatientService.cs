@@ -1,5 +1,6 @@
-﻿using Model.AllActors;
+﻿
 using System.Collections.Generic;
+using UserMicroservice.Domain;
 
 namespace UserMicroservice.Service
 {

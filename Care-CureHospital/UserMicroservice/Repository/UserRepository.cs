@@ -1,7 +1,6 @@
-﻿using Model.AllActors;
-using Model.Doctor;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using UserMicroservice.Domain;
 using UserMicroservice.Repository.MySQL;
 using UserMicroservice.Repository.MySQL.Stream;
 

@@ -1,4 +1,4 @@
-﻿using Model.AllActors;
+﻿using UserMicroservice.Domain;
 using UserMicroservice.Repository.MySQL;
 using UserMicroservice.Repository.MySQL.Stream;
 
